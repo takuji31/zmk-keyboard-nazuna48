@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: nazuna46
+name: nazuna46
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - nazuna46_left
+  - nazuna46_right
