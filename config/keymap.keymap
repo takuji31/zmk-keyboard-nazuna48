@@ -1,4 +1,3 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -7,38 +6,38 @@
         compatible = "zmk,keymap";
 
         layer_0 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&kp GRAVE  &kp Q  &kp W      &kp F     &kp P     &kp G      &kp J     &kp L      &kp U      &kp Y    &kp APOS  &kp EQUAL
+&kp TAB    &kp A  &kp R      &kp S     &kp T     &kp D      &kp H     &kp N      &kp E      &kp I    &kp O     &kp MINUS
+&kp LSHFT  &kp Z  &kp X      &kp C     &kp V     &kp B      &kp K     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
+&none      &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp BSPC  &kp ENTER  &kp RGUI   &none    &none     &none
             >;
         };
 
         layer_1 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         layer_2 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         layer_3 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
