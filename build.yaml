@@ -1,11 +1,11 @@
 
 include:
   - board: akdk_bt1
-    shield: nazuna46_left
+    shield: nazuna48_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
-    shield: nazuna46_right
+    shield: nazuna48_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1

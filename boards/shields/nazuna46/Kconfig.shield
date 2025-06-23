@@ -1,4 +1,0 @@
-config SHIELD_NAZUNA46_LEFT
-    def_bool $(shields_list_contains,nazuna46_left)
-config SHIELD_NAZUNA46_RIGHT
-    def_bool $(shields_list_contains,nazuna46_right)

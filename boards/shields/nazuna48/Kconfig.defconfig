@@ -1,0 +1,14 @@
+
+if SHIELD_NAZUNA48_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "nazuna48"
+
+endif
+
+if SHIELD_NAZUNA48_LEFT || SHIELD_NAZUNA48_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

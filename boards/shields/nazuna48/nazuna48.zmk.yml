@@ -1,7 +1,7 @@
 
 file_format: "1"
-id: nazuna46
-name: nazuna46
+id: nazuna48
+name: nazuna48
 type: shield
 features:
   - keys
@@ -10,5 +10,5 @@ outputs:
   - usb
   - ble
 siblings:
-  - nazuna46_left
-  - nazuna46_right
+  - nazuna48_left
+  - nazuna48_right
