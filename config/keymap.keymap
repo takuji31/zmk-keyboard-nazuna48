@@ -51,6 +51,17 @@
             label = "M_LOWER";
             #binding-cells = <0>;
             bindings = <&lt 1 LANG2>, <&kp LG(SPACE)>, <&kp LA(SPACE)>;
+
+            tapping-term-ms = <180>;
+        };
+
+        w_lower: w_lower {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W_LOWER";
+            #binding-cells = <0>;
+            bindings = <&lt 1 LANG2>, <&kp LG(SPACE)>, <&kp LA(SPACE)>;
+
+            tapping-term-ms = <180>;
         };
     };
 
@@ -60,10 +71,10 @@
         base_m {
             display-name = "[M]   Base";
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp F         &kp P           &kp G     &kp J        &kp L      &kp U      &kp Y    &kp APOS  &kp EQUAL
-&kp LCTRL  &kp A  &kp R      &kp S         &kp T           &kp D     &kp H        &kp N      &kp E      &kp I    &kp O     &kp MINUS
-&kp LSHFT  &kp Z  &kp X      &kp C         &kp V           &kp B     &kp K        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
-&none      &none  &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &m_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp ESC  &kp LBKT  &kp RBKT
+&kp TAB    &kp Q  &kp W      &kp F         &kp P           &kp G     &kp J        &kp L      &kp U      &kp Y     &kp APOS  &kp EQUAL
+&kp LCTRL  &kp A  &kp R      &kp S         &kp T           &kp D     &kp H        &kp N      &kp E      &kp I     &kp O     &kp MINUS
+&kp LSHFT  &kp Z  &kp X      &kp C         &kp V           &kp B     &kp K        &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp SEMI
+&mo 15     &none  &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &m_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp LBKT  &kp RBKT  &mo 14
             >;
         };
 
@@ -103,7 +114,7 @@
 &kp TAB    &kp Q  &kp W      &kp F         &kp P           &kp G     &kp J        &kp L      &kp U      &kp Y    &kp APOS  &kp EQUAL
 &kp LCTRL  &kp A  &kp R      &kp S         &kp T           &kp D     &kp H        &kp N      &kp E      &kp I    &kp O     &kp MINUS
 &kp LSHFT  &kp Z  &kp X      &kp C         &kp V           &kp B     &kp K        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
-&none      &none  &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &m_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp ESC  &kp LBKT  &kp RBKT
+&none      &none  &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &w_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp ESC  &kp LBKT  &kp RBKT
             >;
         };
 
@@ -138,7 +149,7 @@
         };
 
         layer_8 {
-            display-name = "[ ]   Mode";
+            display-name = "Layer8";
             bindings = <
 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
@@ -148,7 +159,7 @@
         };
 
         layer_9 {
-            display-name = "[ ]   Mode";
+            display-name = "Layer9";
             bindings = <
 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
@@ -158,7 +169,7 @@
         };
 
         layer_10 {
-            display-name = "[ ]   Mode";
+            display-name = "Layer10";
             bindings = <
 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
