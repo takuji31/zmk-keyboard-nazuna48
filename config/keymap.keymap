@@ -221,7 +221,7 @@
         mode {
             display-name = "[ ]   Mode";
             bindings = <
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&none   &none   &tog 4  &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
