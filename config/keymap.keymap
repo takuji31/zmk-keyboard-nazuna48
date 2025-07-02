@@ -45,7 +45,8 @@
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
-       m_lower: m_lower {
+
+        m_lower: m_lower {
             compatible = "zmk,behavior-tap-dance";
             label = "M_LOWER";
             #binding-cells = <0>;
@@ -95,6 +96,7 @@
 &trans  &trans        &trans        &trans  &trans  &trans  &trans      &trans            &trans      &trans      &trans        &trans
             >;
         };
+
         base_w {
             display-name = "[W]   Base";
             bindings = <
@@ -134,7 +136,38 @@
 &trans  &trans        &trans        &trans  &trans  &trans  &trans      &trans            &trans      &trans      &trans        &trans
             >;
         };
-        key_pad {
+
+        layer_8 {
+            display-name = "[ ]   Mode";
+            bindings = <
+&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            display-name = "[ ]   Mode";
+            bindings = <
+&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            display-name = "[ ]   Mode";
+            bindings = <
+&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        novel {
             display-name = "[ ]  Novel";
             bindings = <
 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
@@ -143,15 +176,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-        key_pad {
-            display-name = "[ ] KeyPad";
-            bindings = <
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
+
         navigation {
             display-name = "[ ]   Navi";
             bindings = <
@@ -161,7 +186,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-        
+
+        key_pad {
+            display-name = "[ ] KeyPad";
+            bindings = <
+&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         device {
             display-name = "[ ] Device";
             bindings = <
@@ -171,7 +206,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-        template {
+
+        mode {
             display-name = "[ ]   Mode";
             bindings = <
 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
@@ -179,25 +215,6 @@
 &trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-        };
-        layer_8 {
-            status = "reserved";
-        };
-        layer_8 {
-            status = "reserved";
-        };
-        layer_8 {
-            status = "reserved";
-        };
-
-        layer_8 {
-            status = "reserved";
-        };
-        layer_8 {
-            status = "reserved";
-        };
-        layer_8 {
-            status = "reserved";
         };
     };
 
