@@ -65,8 +65,6 @@
 &kp LSHFT  &kp Z         &kp X        &kp C         &kp V           &kp B     &kp K        &kp M         &kp COMMA    &kp DOT           &kp FSLH      &kp SEMI
 &mo 4      &none         &kp LCTRL    &mt LALT DEL  &mt LGUI SPACE  &m_lower  &lt 2 LANG1  &kp ENTER     &kp BSPC     &kp LEFT_BRACKET  &kp RBKT      &mo 4
             >;
-
-            label = "Base Mac";
         };
 
         lower_m {
@@ -76,8 +74,6 @@
 &trans     &none      &none     &none     &kp LS(LG(V))  &mkp MB5  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none   &none
 &trans     &trans     &trans    &trans    &trans         &trans    &trans    &trans     &kp DEL    &trans     &trans  &trans
             >;
-
-            label = "Lower Mac";
         };
 
         raise_m {
@@ -87,8 +83,6 @@
 &trans     &kp F6    &kp F7   &kp F8    &kp F9    &kp F10    &kp LC(TAB)      &none      &none      &none     &none      &none
 &trans     &kp F11   &kp F12  &trans    &trans    &trans     &trans           &trans     &trans     &trans    &trans     &trans
             >;
-
-            label = "Raise Mac";
         };
 
         adjust_m {
@@ -98,8 +92,6 @@
 &trans  &none         &none         &none   &none   &none   &none       &none             &none       &none       &none         &none
 &trans  &trans        &trans        &trans  &trans  &trans  &trans      &trans            &trans      &trans      &trans        &trans
             >;
-
-            label = "Adjust Mac";
         };
 
         template {
