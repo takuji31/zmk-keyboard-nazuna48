@@ -72,7 +72,7 @@
             display-name = "[M]   Base";
             bindings = <
 &kp ESC    &kp Q         &kp W      &kp F         &kp P           &kp G     &kp J        &kp L      &kp U      &kp Y     &kp APOS  &kp EQUAL
-&kp TAB    &hml LCTRL A  &kp R      &kp S         &kp T           &kp D     &kp H        &kp N      &kp E      &kp I     &kp O     &kp MINUS
+&kp TAB    &hml LCTRL A  &hml LALT R      &hml LGUI S         &hml LSHFT T           &kp D     &kp H        &hmr RSHFT N      &hmr LGUI E      &hmr LALT I     &hmr RCTRL O     &kp MINUS
 &kp LSHFT  &kp Z         &kp X      &kp C         &kp V           &kp B     &kp K        &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp SEMI
 &mo 15     &none         &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &m_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp LBKT  &kp RBKT  &mo 14
             >;
@@ -112,7 +112,7 @@
             display-name = "[W]   Base";
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp F         &kp P           &kp G     &kp J        &kp L      &kp U      &kp Y    &kp APOS  &kp EQUAL
-&kp LCTRL  &kp A  &kp R      &kp S         &kp T           &kp D     &kp H        &kp N      &kp E      &kp I    &kp O     &kp MINUS
+&kp TAB    &hml LGUI A  &hml LALT R      &hml LCTRL S         &hml LSHFT T           &kp D     &kp H        &hmr RSHFT N      &hmr RCTRL E      &hmr LALT I     &hmr RGUI O     &kp MINUS
 &kp LSHFT  &kp Z  &kp X      &kp C         &kp V           &kp B     &kp K        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
 &none      &none  &kp LCTRL  &mt LALT DEL  &mt LGUI SPACE  &w_lower  &lt 2 LANG1  &kp ENTER  &kp BSPC   &kp ESC  &kp LBKT  &kp RBKT
             >;
