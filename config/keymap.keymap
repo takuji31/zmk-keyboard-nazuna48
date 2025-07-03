@@ -111,30 +111,30 @@
         base_w {
             display-name = "[W]   Base";
             bindings = <
-&kp TAB    &kp Q        &kp W        &kp F         &kp P           &kp G     &kp J        &kp L         &kp U         &kp Y        &kp APOS     &kp EQUAL
-&kp TAB    &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T    &kp D     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp MINUS
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V           &kp B     &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp SEMI
-&mo 15     &none        &kp LCTRL    &mt LALT DEL  &mt LGUI SPACE  &w_lower  &lt 2 LANG1  &kp ENTER     &kp BSPC      &kp LBKT     &kp RBKT     &mo 14
+&kp TAB    &kp Q        &kp W        &kp F         &kp P            &kp G     &kp J        &kp L         &kp U         &kp Y        &kp APOS     &kp EQUAL
+&kp TAB    &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T     &kp D     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp MINUS
+&kp LSHFT  &kp Z        &kp X        &kp C         &kp V            &kp B     &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp SEMI
+&mo 15     &none        &kp LGUI     &mt LALT DEL  &mt LCTRL SPACE  &w_lower  &lt 2 LANG1  &kp ENTER     &kp BSPC      &kp LBKT     &kp RBKT     &mo 14
             >;
         };
 
         lower_w {
             display-name = "[W] Lower";
             bindings = <
-&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &kp N6    &kp N7     &kp N8     &kp N9     &kp N0  &kp BSLH
-&trans     &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &mkp MB4  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none   &none
-&trans     &none      &none     &none     &none      &mkp MB5  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none   &none
-&trans     &trans     &trans    &trans    &trans     &trans    &trans    &trans     &kp DEL    &trans     &trans  &trans
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6    &kp N7     &kp N8     &kp N9     &kp N0  &kp BSLH
+&trans     &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &mkp MB4  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none   &none
+&trans     &none     &none     &none      &none      &mkp MB5  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none   &none
+&trans     &trans    &trans    &trans     &trans     &trans    &trans    &trans     &kp DEL    &trans     &trans  &trans
             >;
         };
 
         raise_w {
             display-name = "[W]  Raise";
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET        &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp PIPE
-&trans     &kp F1    &kp F2   &kp F3    &kp F4    &kp F5     &kp LS(LC(TAB))  &kp RSHFT  &kp LGUI   &kp LALT  &kp RCTRL  &none
-&trans     &kp F6    &kp F7   &kp F8    &kp F9    &kp F10    &kp LC(TAB)      &none      &none      &none     &none      &none
-&trans     &kp F11   &kp F12  &trans    &trans    &trans     &trans           &trans     &trans     &trans    &trans     &trans
+&kp TILDE  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET        &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp PIPE
+&trans     &kp F1    &kp F2   &kp F3    &kp F4    &kp F5     &kp LS(LC(TAB))  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&trans     &kp F6    &kp F7   &kp F8    &kp F9    &kp F10    &kp LC(TAB)      &none      &none      &none     &none     &none
+&trans     &kp F11   &kp F12  &trans    &trans    &trans     &trans           &trans     &trans     &trans    &trans    &trans
             >;
         };
 
