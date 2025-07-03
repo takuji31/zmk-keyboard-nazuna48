@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "W_LOWER";
             #binding-cells = <0>;
-            bindings = <&lt 1 LANG2>, <&kp LG(SPACE)>, <&kp LA(SPACE)>;
+            bindings = <&lt 5 LANG2>, <&kp LG(SPACE)>, <&kp LA(SPACE)>;
 
             tapping-term-ms = <180>;
         };
@@ -129,7 +129,7 @@
 &kp TAB    &kp Q        &kp W        &kp F         &kp P            &kp G     &kp J        &kp L         &kp U         &kp Y        &kp APOS     &kp EQUAL
 &kp TAB    &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T     &kp D     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp MINUS
 &kp LSHFT  &kp Z        &kp X        &kp C         &kp V            &kp B     &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp SEMI
-&mo 15     &none        &kp LGUI     &mt LALT DEL  &mt LCTRL SPACE  &w_lower  &lt 2 LANG1  &kp ENTER     &kp BSPC      &kp LBKT     &kp RBKT     &mo 14
+&mo 15     &none        &kp LGUI     &mt LALT DEL  &mt LCTRL SPACE  &w_lower  &lt 6 LANG1  &kp ENTER     &kp BSPC      &kp LBKT     &kp RBKT     &mo 14
             >;
         };
 
