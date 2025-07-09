@@ -48,6 +48,15 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        mac_alt: mac_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MAC_ALT";
+            #binding-cells = <0>;
+            bindings = <&mt LALT LG(SPACE)>, <&kp LA(SPACE)>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     keymap {
@@ -56,10 +65,10 @@
         base_m {
             display-name = "[M]   Base";
             bindings = <
-&kp ESC    &kp Q         &kp W                &kp F               &kp P           &kp G        &kp J        &kp L         &kp U        &kp Y        &kp APOS      &kp EQUAL
-&kp TAB    &hml LCTRL A  &hml LALT R          &hml LGUI S         &hml LSHFT T    &kp D        &kp H        &hmr RSHFT N  &hmr LGUI E  &hmr LALT I  &hmr RCTRL O  &kp MINUS
-&kp LSHFT  &kp Z         &kp X                &kp C               &kp V           &kp B        &kp K        &kp M         &kp COMMA    &kp DOT      &kp FSLH      &kp SEMI
-&mo 15     &tog 12       &mt LCTRL LA(SPACE)  &mt LALT LG(SPACE)  &mt LGUI SPACE  &lt 1 LANG2  &lt 2 LANG1  &kp ENTER     &kp BSPC     &kp LBKT     &kp RBKT      &mo 14
+&kp ESC    &kp Q         &kp W        &kp F        &kp P           &kp G        &kp J        &kp L         &kp U        &kp Y        &kp APOS      &kp EQUAL
+&kp TAB    &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T    &kp D        &kp H        &hmr RSHFT N  &hmr LGUI E  &hmr LALT I  &hmr RCTRL O  &kp MINUS
+&kp LSHFT  &kp Z         &kp X        &kp C        &kp V           &kp B        &kp K        &kp M         &kp COMMA    &kp DOT      &kp FSLH      &kp SEMI
+&mo 15     &tog 12       &kp LCTRL    &mac_alt     &mt LGUI SPACE  &lt 1 LANG2  &lt 2 LANG1  &kp ENTER     &kp BSPC     &kp LBKT     &kp RBKT      &mo 14
             >;
         };
 
