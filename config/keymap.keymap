@@ -68,6 +68,29 @@
         };
     };
 
+    macros {
+        win_and_usb: win_and_usb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_on 4 &out OUT_USB>;
+            label = "WIN_AND_USB";
+        };
+
+        win_ble_4: win_ble_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_on 4 &out OUT_BLE &bt BT_SEL 4>;
+            label = "WIN_BLE_4";
+        };
+
+        mac_ble_0: mac_ble_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off 4 &out OUT_BLE &bt BT_SEL 0>;
+            label = "MAC_BLE_0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -214,10 +237,10 @@
         device {
             display-name = "[ ] Device";
             bindings = <
-&none   &kp C_BRI_DN  &kp C_BRI_UP  &none   &none   &none   &kp C_PREV    &kp C_PP       &kp C_NEXT     &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP
-&trans  &none         &none         &none   &none   &none   &bt BT_CLR    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-&trans  &none         &none         &none   &none   &none   &out OUT_TOG  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&trans  &trans        &trans        &trans  &trans  &trans  &trans        &trans         &trans         &trans         &trans         &trans
+&none   &kp C_BRI_DN  &kp C_BRI_UP  &none   &none   &none   &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP
+&trans  &none         &none         &none   &none   &none   &bt BT_CLR    &mac_ble_0    &none         &none         &none         &win_ble_4
+&trans  &none         &none         &none   &none   &none   &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans  &trans  &trans  &trans        &trans        &trans        &trans        &win_and_usb  &trans
             >;
         };
 
